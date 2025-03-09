@@ -36,14 +36,87 @@ Love Score: 72
 ## **Implementation:**  
 ```python
 def calculate_love_score(first_name, second_name):
-    first_count = sum(1 for letter in first_name + second_name if letter.lower() in "true")
-    second_count = sum(1 for letter in first_name + second_name if letter.lower() in "love")
-
-    love_score = int(str(first_count) + str(second_count))
-    print(f"Love Score: {love_score}")
-
-calculate_love_score("Deepesh", "Shreya")
-```
+    
+    first_count = 0
+    for letter in first_name:
+        if(letter == "T" or letter == "t"):
+            first_count += 1
+    for letter in second_name:
+        if( letter == "T" or letter == "t"):
+            first_count += 1
+    print(f"T occurs {first_count} times")
+    
+    second_count = 0
+    for letter in first_name:
+        if(letter == "R" or letter =="r"):
+            second_count += 1
+    for letter in second_name:
+        if( letter == "R" or letter =="r"):
+            second_count += 1
+    print(f"R occurs {second_count} times")
+    
+    third_count = 0
+    for letter in first_name:
+        if(letter == "U" or letter == "u"):
+            third_count += 1
+    for letter in second_name:
+        if( letter == "U" or letter == "u"):
+            third_count += 1
+    print(f"U occurs {third_count} times")
+    
+    fourth_count = 0
+    for letter in first_name:
+        if(letter == "E" or letter == "e"):
+            fourth_count += 1
+    for letter in second_name:
+        if( letter == "E" or letter == "e"):
+            fourth_count += 1
+    print(f"E occurs {fourth_count} times")
+    
+    First_Total = first_count + second_count + third_count + fourth_count
+    print(First_Total)
+    
+    first_count = 0
+    for letter in first_name:
+        if(letter == "L" or letter == "l"):
+            first_count += 1
+    for letter in second_name:
+        if( letter == "L" or letter == "l"):
+            first_count += 1
+    print(f"L occurs {first_count} times")
+    
+    second_count = 0
+    for letter in first_name:
+        if(letter == "O" or letter == "o"):
+            second_count += 1
+    for letter in second_name:
+        if( letter == "O" or letter == "o"):
+            second_count += 1
+    print(f"O occurs {second_count} times")
+    
+    third_count = 0
+    for letter in first_name:
+        if(letter == "V" or letter == "v"):
+            third_count += 1
+    for letter in second_name:
+        if( letter == "V" or letter == "v"):
+            third_count += 1
+    print(f"V occurs {third_count} times")
+    
+    fourth_count = 0
+    for letter in first_name:
+        if(letter == "E" or letter == "e"):
+            fourth_count += 1
+    for letter in second_name:
+        if( letter == "E" or letter == "e"):
+            fourth_count += 1
+    print(f"E occurs {fourth_count} times")
+    
+    Second_Total = first_count + second_count + third_count +fourth_count
+    print(Second_Total)
+    
+    Total = str(First_Total) + str(Second_Total)
+    print(Total)```
 
 ---  
 
